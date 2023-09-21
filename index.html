@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  header{
+    box-sizing: border-box;
+    position: fixed;
+    margin: 0;
+    background-color: rgba(111, 106,247, 1);
+    height: 127px;
+    width: 1731px;
+  }
+  
+  li{
+    color: rgba(255,255,255, 1);
+    font-family: 'DM sans';
+    font-weight: 500px;
+    font-size: 36.43px;
+    line-height: 57.73px;
+    position: relative;
+    display: inline;
+    text-align: center;
+    top: 30px;
+    
+}
+  ul{
+    list-style: none;
+  }
+  input{
+    width: 314px;
+    height: 57px;
+    border-radius: 63px;
+    border: none;
+    font-size: 24.43px;
+    line-height: 31.81px;
+    font-weight: 400px;
+    font-family: 'DM sans';
+  }
+  .image{
+    height: 507px;
+    width: 456px;
+    margin-right: 40px;
+   
+    border-radius: 20px;
+
+    
+  }
+  textarea{
+    box-sizing: border-box;
+    padding-top: 20px;
+    height: 506px;
+    width: 972px;
+    background-color: rgba(229,216, 255,1);
+    border-radius: 20px;
+    border-color: rgba(255,255,255, 1);
+    border: 6px;
+    font-family: 'DM sans';
+    font-weight: 400px;
+    font-size: 29px;
+    line-height: 51.82px;
+    color: rgba(111, 115,115, 1);
+    
+  }
+  .container2{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 296px;
+    padding-left: 101px;
+
+  }
+  .container3{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    padding-top: 100px;
+   
+  }
+  div{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 90px;
+    margin-top: 50px;
+
+    box-sizing: border-box;
+  }
+  .box1{
+    padding: 0;
+    padding-left: 25px;
+    height: 145.48px;
+    width: 337px;
+    background-color: rgba(146, 157,255,1);
+    border: none;
+    border-radius: 11px;
+    margin-right: 50px;
+  }
+  .box2{
+    padding: 0;
+    padding-left: 25px;
+    height: 145.48px;
+    width: 337px;
+    background-color: rgba(115, 76,242,1);
+    margin-right: 50px;
+    border: none;
+    border-radius: 11px;
+  }
+  .box3{
+    padding: 0;
+    padding-left: 25px;
+    height: 145.48px;
+    width: 337px;
+    background-color: rgba(210, 136, 255, 1);
+    margin-right: 50px;
+    border: none;
+    border-radius: 11px;
+
+  }
+  .box4{ 
+    padding: 0;
+    padding-left: 25px;
+    height: 145.48px;
+    width: 337px;
+    background-color: rgba(0,0,0,1);
+    margin-right: 50px;
+    border: none;
+    border-radius: 11px;
+  }
+  h1{
+    height: 36px;
+    width: 244px;
+    font-family: 'DM sans';
+    font-size: 29px;
+    font-weight: 700px;
+    line-height: 52px;
+    color: rgba(255,255,255, 1);
+    letter-spacing: 4%;
+    margin-right: 15px;
+    
+  }
+  .icon{
+  padding: 0;
+  padding-left: 178px;
+  margin-top: 70px;
+  height: 140px;
+  width: 140px;
+  position: fixed;
+
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+  }
+  button{
+    
+    height: 133px;
+    width: 397px;
+    border-radius: 22px;
+    font-family: 'DM sans';
+    font-size: 35px;
+    font-weight: 700px;
+    line-height: 62.54px;
+    
+
+
+    
+  }
+  .but1{
+    background-color: rgba(188,224,246, 1);
+    border: none;
+    color: rgba(0,0,0,1);
+    font-family: 'DM sans';
+    font-weight: 700px;
+    font-size: 35px;
+    line-height: 62.54px;
+    letter-spacing: 4%;
+   
+
+  }
+  .but2{
+    
+   background-color: rgba(72, 62,255, 1);
+    color: rgba(255,255,255, 1);
+    border-color: rgba(255,255,255, 1);
+    border: 5px solid rgba(255,255,255, 1);
+    font-family:' DM sans';
+    font-weight: 700px;
+    font-size: 35px;
+    line-height: 62.54px;
+    letter-spacing: 4%;
+   
+
+  }
+  .but3{
+    background-color: rgba(72, 62,255, 1);
+    
+    color: rgba(255,255,255, 1);
+    border-color: rgba(255,255,255, 1);
+    border: 5px solid rgba(255,255,255, 1);
+    font-family: 'DM sans';
+    font-weight: 700px;
+    font-size: 35px;
+    line-height: 62.54px;
+    letter-spacing: 4%;
+   
+
+  
+
+  }
+  .text2{
+    
+    height: 300px;
+    width: 400px;
+    margin-left: 500px;
+  
+  }
+  .whatsapp{
+
+    border: 3px solid black;
+    border-radius: 9px;
+    margin-bottom: 2.5px;
+   
+  }
+  .whatsapp1{
+    
+
+    border: 3px solid black;
+    border-radius: 9px;
+    margin-bottom: 2.5px;
+
+    
+}
+.whatsapp2{
+
+    border: 3px solid black;
+    border-radius: 9px;
+    margin-bottom: 2.5px;
+  
+}
+.container{
+    box-sizing: border-box;
+    background-color: rgba(72, 62,255,1);
+    height: 717px;
+    width: 1540px;
+    margin-left: 98px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 0%;
+    border: none;
+    border-radius: 21px;
+
+
+  }
+  .container4{
+    padding-left: 0;
+    margin-left: 40px;
+    
+  }
+.container5{
+  background-color: rgba(255,255,255, 1);
+  height: 636px;
+  width: 1004px;
+  margin-left: 70px;
+  border-radius: 20px;
+  
+
+}
+.inf{
+  padding-top: 20px;
+  font-family: 'inter';
+  font-size: 38px;
+  font-weight: 700px;
+  line-height: 45.99px;
+  color: rgba(4,40,90,1);
+  height: 36px;
+  width: 376px;
+  letter-spacing: 10.5%;
+
+
+}
+.sp{
+  height: 26px;
+  width: 85px;
+  font-family: 'roboto';
+  font-size: 28px;
+  font-weight: 500px;
+  line-height: 32.81px;
+  letter-spacing: 10.5%;
+  color: rgba(4,40,90,1);
+  
+}
+.sp1{
+  height: 22px;
+  width: 150px;
+  font-family: 'roboto';
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 28.13px;
+  letter-spacing: 5%;
+  color: rgba(20,53,101,1);
+
+  
+}
+.but4{
+  background-color:  #000000;
+  color: rgba(255,255,255, 1);
+  height: 78px;
+  width: 200px;
+  margin-top: 525px;
+  margin-left: 280px;
+  border-radius: 9px;
+
+}
+
+  
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+            <ul>
+                <li style="font-family: delius unicase; font-size: 61.43px; padding-top: 10px; padding-right: 220px;">DAPPR</li>
+                <li style="padding-right: 45px;">Home</li>
+                <li style="padding-right: 45px;">About &nbsp;Us</li>
+                <li style="padding-right: 45px;">Information</li>
+                <li style="padding-right: 50px;">More <img src="Vector (1).png"></li>
+                <li><input placeholder="search.....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128269;"></li>
+                <li style="padding-left: 120px; top: 40px;"><img src="Vector.png"></li>
+
+            
+            </ul>
+
+            </span>
+        </nav>
+    </header>
+    <div class="container2">
+    <img src="image 4.svg"  class="image"   alt="sample image"><textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it's not writers who can benefit from this free online tool. if you're a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;programmer who's working on a......</textarea><div class="container3"><img  class="whatsapp" src="logos_whatsapp-icon.svg">
+    <img class="whatsapp1"src="Vector (3).svg">
+   <img class="whatsapp2" src="Vector (1).svg"></div>
+  </div>
+    
+   
+    <div>
+    <div class="box1">
+      <h1>Total &nbsp;Question's
+        <br>
+        200, 000</h1>
+    
+    </div>
+    <div class="box2"><h1>Total &nbsp;Answer's
+      <br>
+      105, 000</h1></div>
+    <div class="box3"><h1>Participated
+      <br>
+      10, 000</h1></div>
+    <div class="box4"><h1>Total&nbsp;Passed 
+      <br>
+      6, 000</h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="icon" src="Group 2.svg"></div>
+    </div >
+    <div class="container">
+      <div class="container4">
+      <form>
+      <button class="but1">YOUR INFO</button>
+      <button class="but2">BOOKMARKS</button>
+      <button class="but3">SETTINGS</button>
+    </form>
+     </div>
+     <div class="container5"> 
+      <p class="inf"> Your Information 
+        <br>
+        <br>
+      <span class="sp">Name &nbsp;&nbsp;</span><span class="sp1">&nbsp;&nbsp;: &nbsp; Atul Singhal </span>
+      <br>
+      <br>
+      <span class="sp">Email &nbsp;&nbsp;</span><span class="sp1">  &nbsp;&nbsp;: &nbsp; atul@gmail.com </span>
+      <br>
+      <br>
+      <span class="sp">Phone &nbsp;</span><span class="sp1"> &nbsp;: &nbsp;+91&nbsp;8131424888</span>
+      <br>
+      <br>
+      <span class="sp">Marks &nbsp;</span><span class="sp1"> &nbsp;: &nbsp;&nbsp;500.00</span>
+      </p>
+      <br>
+      <button class="but4">Next <img src="Arrow 1.svg"></button>
+    
+    
+    
+    </div>
+      
+      
+    </div>
+</body>
+</html>
